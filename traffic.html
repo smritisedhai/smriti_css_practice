@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Planner</title>
+
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main container */
+        .dashboard {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            gap: 20px;
+        }
+
+        /* Header */
+        .header {
+            background-color: #243b53;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .header h1 {
+            margin: 0 0 8px;
+        }
+
+        /* Study goal */
+        .goal {
+            background-color: #dbeafe;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .goal h2 {
+            color: #1e40af;
+        }
+
+        /* Subject cards */
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .subject {
+            padding: 20px;
+            border-radius: 12px;
+            color: #222;
+        }
+
+        .psychology {
+            background-color: #fbcfe8;
+        }
+
+        .research {
+            background-color: #bbf7d0;
+        }
+
+        .statistics {
+            background-color: #fde68a;
+        }
+
+        /* Progress section */
+        .progress {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .progress-bar {
+            background-color: #e2e8f0;
+            height: 18px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background-color: #16a34a;
+            width: 70%;
+            height: 100%;
+        }
+
+        /* Task section */
+        .tasks {
+            background-color: #ede9fe;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .tasks li {
+            margin: 12px 0;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            .subjects {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="header">
+            <h1>My Study Planner</h1>
+            <p>Organise your learning, one day at a time.</p>
+        </header>
+
+        <section class="goal">
+            <h2>Today's Study Goal</h2>
+            <p>Complete 3 hours of focused study today.</p>
+            <strong>Target: 3 hours</strong>
+        </section>
+
+        <section class="subjects">
+
+            <div class="subject psychology">
+                <h2>Psychology</h2>
+                <p>Study time: 1 hour</p>
+                <p>Topic: Social Psychology</p>
+            </div>
+
+            <div class="subject research">
+                <h2>Research Methods</h2>
+                <p>Study time: 1 hour</p>
+                <p>Topic: Qualitative Research</p>
+            </div>
+
+            <div class="subject statistics">
+                <h2>Statistics</h2>
+                <p>Study time: 1 hour</p>
+                <p>Topic: Correlation</p>
+            </div>
+
+        </section>
+
+        <section class="progress">
+            <h2>Weekly Progress</h2>
+            <p>You have completed 70% of your weekly target.</p>
+
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <h2>Today's Tasks</h2>
+
+            <ul>
+                <li>Read one psychology chapter</li>
+                <li>Review research-methods notes</li>
+                <li>Practise correlation problems</li>
+                <li>Prepare tomorrow's study plan</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
